@@ -32,9 +32,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.disciplineName.backgroundColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
+    self.disciplineName.textColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
     self.disciplineTaskList.backgroundColor = [UIColor colorWithRed:0.8 green:0.9 blue:1 alpha:1];
-    self.disciplineTestList.backgroundColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
+    self.disciplineTestList.backgroundColor = [UIColor colorWithRed:0.6 green:0.8 blue:1 alpha:1];
+    self.disciplineTaskList.separatorStyle = NO;
 }
 
 - (void)didReceiveMemoryWarning

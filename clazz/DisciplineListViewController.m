@@ -73,7 +73,7 @@
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 70)];
     
     // set custom title
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(120, (headerView.frame.size.height - 10)/2, 80, 20)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, (headerView.frame.size.height - 10)/2, 80, 20)];
     [label setFont:[UIFont boldSystemFontOfSize:24]];
     [label setText:@"Disciplinas"];
     
@@ -108,6 +108,8 @@
 	// Set up the cell
 	cell.textLabel.text = currentDiscipline.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Somente uma disciplina"];
+    tableView.separatorStyle = NO;
+    
     if (indexPath.row == 0) [cell setBackgroundColor:[UIColor whiteColor]];
     else [cell setBackgroundColor:[UIColor colorWithRed:0.6 green:0.8 blue:1 alpha:1]];
     

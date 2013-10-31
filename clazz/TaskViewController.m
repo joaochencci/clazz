@@ -38,10 +38,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.taskName.backgroundColor = [UIColor colorWithRed:0.8 green:0.9 blue:1 alpha:1];
+    self.taskName.textColor = [UIColor colorWithRed:0.8 green:0.9 blue:1 alpha:1];
+    
     self.color = self.percentageConcluded.textColor;
-    self.taskDiscipline.backgroundColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
-    self.taskTest.backgroundColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
+    self.taskDiscipline.textColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
+    self.taskTest.textColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
 }
 
 - (void)didReceiveMemoryWarning
