@@ -38,8 +38,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.taskName.textColor = [UIColor colorWithRed:0.8 green:0.9 blue:1 alpha:1];
-    
+    self.taskName.textColor = [UIColor colorWithRed:0.7 green:0.8 blue:1 alpha:1];
+    [self.taskName setFont:[UIFont boldSystemFontOfSize:24]];
+    self.taskName.text = [self.taskName.text uppercaseString];
     self.color = self.percentageConcluded.textColor;
     self.taskDiscipline.textColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
     self.taskTest.textColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
