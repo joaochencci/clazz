@@ -17,7 +17,7 @@
                BlueprintIdentifier = "42D7F52E181A9044003F5D3F"
                BuildableName = "clazz.app"
                BlueprintName = "clazz"
-               ReferencedContainer = "container:clazz.xcodeproj">
+               ReferencedContainer = "container:Clazz.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "42D7F549181A9044003F5D3F"
                BuildableName = "clazzTests.xctest"
                BlueprintName = "clazzTests"
-               ReferencedContainer = "container:clazz.xcodeproj">
+               ReferencedContainer = "container:Clazz.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "42D7F52E181A9044003F5D3F"
             BuildableName = "clazz.app"
             BlueprintName = "clazz"
-            ReferencedContainer = "container:clazz.xcodeproj">
+            ReferencedContainer = "container:Clazz.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "42D7F52E181A9044003F5D3F"
             BuildableName = "clazz.app"
             BlueprintName = "clazz"
-            ReferencedContainer = "container:clazz.xcodeproj">
+            ReferencedContainer = "container:Clazz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "42D7F52E181A9044003F5D3F"
             BuildableName = "clazz.app"
             BlueprintName = "clazz"
-            ReferencedContainer = "container:clazz.xcodeproj">
+            ReferencedContainer = "container:Clazz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

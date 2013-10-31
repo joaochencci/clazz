@@ -53,8 +53,8 @@
 - (IBAction)percentageSelected:(id)sender {
     
     self.percentageConcluded.text = [[NSNumber numberWithFloat:roundf(100*self.percentageSlider.value)] stringValue];
-    if (self.percentageSlider.value == 1) self.percentageConcluded.textColor = [UIColor redColor];
-    else if (self.percentageSlider.value >= 0.5) self.percentageConcluded.textColor = [UIColor colorWithRed:1 green:0.8 blue:0.2 alpha:1];
+    if (roundf(100*self.percentageSlider.value) == 100) self.percentageConcluded.textColor = [UIColor redColor];
+    else if (roundf(100*self.percentageSlider.value) >= 50) self.percentageConcluded.textColor = [UIColor colorWithRed:1 green:0.8 blue:0.2 alpha:1];
     else self.percentageConcluded.textColor = self.color;
 }
 
