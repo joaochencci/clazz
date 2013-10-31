@@ -7,6 +7,7 @@
 //
 
 #import "TaskListViewController.h"
+#import "TaskViewController.h"
 #import "User.h"
 #import "Task.h"
 
@@ -29,6 +30,7 @@
 {
     [super viewDidLoad];
 
+    self.title = @"Tarefas";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.separatorStyle = NO;
@@ -56,15 +58,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
-    
-    Task *newTask = [[Task alloc] init];
-    newTask.name = @"Tarefa 1";
-    
-    [[User sharedUser] createTask:newTask];
-    
-    NSLog(@"%d", [[User sharedUser] numberOfTasks]);
+    NSLog(@"%d", (int)[[User sharedUser] numberOfTasks]);
     return [[User sharedUser] numberOfTasks];
 }
 
@@ -76,7 +70,7 @@
     // set custom title
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(120, (headerView.frame.size.height - 10)/2, 80, 20)];
     [label setFont:[UIFont boldSystemFontOfSize:24]];
-    [label setText:@"Tarefas"];
+//    [label setText:@"Tarefas"];
     
     
     // add button for story creation
@@ -113,6 +107,34 @@
     else [cell setBackgroundColor:[UIColor colorWithRed:0.6 green:0.8 blue:1 alpha:1]];
     
 	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"showTaskDetails" sender:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showTaskDetails"])
+    {
+        TaskViewController *detailViewController =
+        [segue destinationViewController];
+        
+        NSIndexPath *myIndexPath = [self.tableView
+                                    indexPathForSelectedRow];
+        
+//        int row = (int)[myIndexPath row];
+//        Task *sessionTask = [[User sharedUser] taskAtIndex:(NSInteger)row];
+//        
+//        detailViewController.taskDetailModel = @[sessionTask.name,
+//                                                 sessionTask.discipline,
+//                                                 sessionTask.test,
+//                                                 sessionTask.description,
+//                                                 sessionTask.initialDate,
+//                                                 sessionTask.finishDate
+//                                                ];
+    }
 }
 
 #pragma mark Selector Methods

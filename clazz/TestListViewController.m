@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     
+    self.title = @"Provas";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.separatorStyle = NO;
@@ -56,17 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
-    // Return the number of rows in the section.
-    
-    Test *newTest = [[Test alloc] init];
-    newTest.name = @"Prova 1";
-    
-    [[User sharedUser] createTest:newTest];
-    
-    // Abaixo fica
-    
-    NSLog(@"%d", [[User sharedUser] numberOfTests]);
+    NSLog(@"%d", (int)[[User sharedUser] numberOfTests]);
     return [[User sharedUser] numberOfTests];
 }
 
@@ -78,7 +69,7 @@
     // set custom title
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(120, (headerView.frame.size.height - 10)/2, 80, 20)];
     [label setFont:[UIFont boldSystemFontOfSize:24]];
-    [label setText:@"Provas"];
+//    [label setText:@"Provas"];
     
     // add button for story creation
     //    UIButton *newStoryButton = [[UIButton alloc] initWithFrame:CGRectMake((headerView.frame.size.width - 150 - 10), (headerView.frame.size.height - 20)/2, 150, 20)];
@@ -116,6 +107,7 @@
     
 	return cell;
 }
+
 
 #pragma mark Selector Methods
 - (void) goToStoryDataManagement

@@ -10,4 +10,6 @@
 
 @interface TaskViewController : UIViewController
 
+@property (strong, nonatomic) NSArray *taskDetailModel;
+
 @end

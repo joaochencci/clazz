@@ -10,7 +10,8 @@
 
 @interface Discipline : NSObject
 
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *name;           //form
+@property (strong, nonatomic) NSString *description;    //form
 @property (strong, nonatomic) NSMutableArray *tests;
 
 - (BOOL) createTestWithName:(NSString *)name andPonder:(NSInteger *)ponder;
