@@ -7,6 +7,7 @@
 //
 
 #import "DisciplineListViewController.h"
+#import "DisciplineViewController.h"
 #import "User.h"
 #import "Discipline.h"
 
@@ -29,6 +30,7 @@
 {
     [super viewDidLoad];
     
+    self.title = @"Disciplinas";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
 }
@@ -55,15 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
-    // Return the number of rows in the section.
-    
-    Discipline *newDiscipline = [[Discipline alloc] init];
-    newDiscipline.name = @"Disciplina 1";
-    
-    [[User sharedUser] createDiscipline:newDiscipline];
-    
-    NSLog(@"%d", [[User sharedUser] numberOfDisciplines]);
+    NSLog(@"%d", (int)[[User sharedUser] numberOfDisciplines]);
     return [[User sharedUser] numberOfDisciplines];
 }
 
@@ -75,7 +69,7 @@
     // set custom title
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, (headerView.frame.size.height - 10)/2, 80, 20)];
     [label setFont:[UIFont boldSystemFontOfSize:24]];
-    [label setText:@"Disciplinas"];
+//    [label setText:@"Disciplinas"];
     
     // add button for story creation
     //    UIButton *newStoryButton = [[UIButton alloc] initWithFrame:CGRectMake((headerView.frame.size.width - 150 - 10), (headerView.frame.size.height - 20)/2, 150, 20)];
@@ -114,6 +108,34 @@
     else [cell setBackgroundColor:[UIColor colorWithRed:0.6 green:0.8 blue:1 alpha:1]];
     
 	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"showDisciplineDetails" sender:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDisciplineDetails"])
+    {
+        DisciplineViewController *detailViewController =
+        [segue destinationViewController];
+        
+        NSIndexPath *myIndexPath = [self.tableView
+                                    indexPathForSelectedRow];
+        
+        //        int row = (int)[myIndexPath row];
+        //        Task *sessionTask = [[User sharedUser] taskAtIndex:(NSInteger)row];
+        //
+        //        detailViewController.taskDetailModel = @[sessionTask.name,
+        //                                                 sessionTask.discipline,
+        //                                                 sessionTask.test,
+        //                                                 sessionTask.description,
+        //                                                 sessionTask.initialDate,
+        //                                                 sessionTask.finishDate
+        //                                                ];
+    }
 }
 
 #pragma mark Selector Methods

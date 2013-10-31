@@ -10,8 +10,9 @@
 
 @interface Test : NSObject
 
-@property (strong, nonatomic) NSString *name;
+                                                    // listar as nossas disciplinas e escolher uma
+@property (strong, nonatomic) NSString *name;       // form
 @property (nonatomic) NSInteger *score;
-@property (nonatomic) NSInteger *ponder;
+@property (nonatomic) NSInteger *ponder;            // form
 
 @end

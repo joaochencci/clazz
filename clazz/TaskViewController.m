@@ -43,6 +43,13 @@
     self.color = self.percentageConcluded.textColor;
     self.taskDiscipline.textColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
     self.taskTest.textColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
+    
+    _taskName.text = _taskDetailModel[0];
+    _taskDiscipline.text = _taskDetailModel[1];
+    _taskTest.text = _taskDetailModel[2];
+    _taskDescription.text = _taskDetailModel[3];
+    _taskInitialDate.text = _taskDetailModel[4];
+    _taskFinalDate.text = _taskDetailModel[5];
 }
 
 - (void)didReceiveMemoryWarning
