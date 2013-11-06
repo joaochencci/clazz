@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *percentageConcluded;
 @property (nonatomic) UIColor *color;
 
+@property (strong, nonatomic) NSNumber *position;
 @end
 
 @implementation TaskViewController
@@ -38,19 +39,34 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.taskName.textColor = [UIColor colorWithRed:0.7 green:0.8 blue:1 alpha:1];
-    [self.taskName setFont:[UIFont boldSystemFontOfSize:24]];
-    self.taskName.text = [self.taskName.text uppercaseString];
-    self.color = self.percentageConcluded.textColor;
-    self.taskDiscipline.textColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
-    self.taskTest.textColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
     
-    _taskName.text = _taskDetailModel[0];
-    _taskDiscipline.text = _taskDetailModel[1];
-    _taskTest.text = _taskDetailModel[2];
-    _taskDescription.text = _taskDetailModel[3];
+//    self.percentageSlider.value = (float)0.3;
+//    self.percentageConcluded.text = [[NSNumber numberWithFloat:roundf(100*self.percentageSlider.value)] stringValue];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"iphone_bg.png"]];
+    
+    self.taskDescription.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4];
+    self.color = self.percentageConcluded.textColor;
+
+//    self.taskName.textColor = [UIColor colorWithRed:0.8 green:0.9 blue:1 alpha:1];
+//    self.taskDiscipline.textColor = [UIColor colorWithRed:0.4 green:0.6 blue:1 alpha:1];
+//    self.taskTest.textColor = [UIColor colorWithRed:0 green:0.6 blue:1 alpha:1];
+    
+    [self.taskName setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
+    [self.taskDiscipline setFont:[UIFont fontWithName:@"Helvetica-Bold" size:17]];
+    [self.taskTest setFont:[UIFont fontWithName:@"Helvetica-Bold" size:17]];
+    
+//    [[self.taskTest textColor] setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
+    
+    _position = _taskDetailModel[0];
+    _taskName.text = _taskDetailModel[1];
+    _taskDescription.text = _taskDetailModel[2];
+    _taskDiscipline.text = _taskDetailModel[3];
     _taskInitialDate.text = _taskDetailModel[4];
     _taskFinalDate.text = _taskDetailModel[5];
+    
+//    _taskTest.text = _taskDetailModel[2];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,9 +78,10 @@
 - (IBAction)percentageSelected:(id)sender {
     
     self.percentageConcluded.text = [[NSNumber numberWithFloat:roundf(100*self.percentageSlider.value)] stringValue];
-    if (roundf(100*self.percentageSlider.value) == 100) self.percentageConcluded.textColor = [UIColor redColor];
-    else if (roundf(100*self.percentageSlider.value) >= 50) self.percentageConcluded.textColor = [UIColor colorWithRed:1 green:0.8 blue:0.2 alpha:1];
-    else self.percentageConcluded.textColor = self.color;
+    
+    //TODO : buscar objeto na posição de "position", inserir o novo valor da porcentagem, salvar de volta
+    
+    self.percentageConcluded.textColor = self.color;
 }
 
 @end

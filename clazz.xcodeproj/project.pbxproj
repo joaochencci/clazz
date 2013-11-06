@@ -10,9 +10,6 @@
 		4207364318201E9500275AF6 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4207364218201E9500275AF6 /* TaskListViewController.m */; };
 		4207364718202CE600275AF6 /* DisciplineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4207364618202CE600275AF6 /* DisciplineListViewController.m */; };
 		4247EFFF182033C80099F9F6 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4247EFFE182033C80099F9F6 /* TestListViewController.m */; };
-		42869A261822728A0046A57D /* disc.png in Resources */ = {isa = PBXBuildFile; fileRef = 42869A231822728A0046A57D /* disc.png */; };
-		42869A271822728A0046A57D /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = 42869A241822728A0046A57D /* task.png */; };
-		42869A281822728A0046A57D /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 42869A251822728A0046A57D /* test.png */; };
 		428724FB1822717D00B2B404 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428724FA1822717D00B2B404 /* TaskViewController.m */; };
 		428724FE182271C800B2B404 /* DisciplineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428724FD182271C800B2B404 /* DisciplineViewController.m */; };
 		42D7F533181A9044003F5D3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7F532181A9044003F5D3F /* Foundation.framework */; };
@@ -31,7 +28,17 @@
 		42D7F567181A90C8003F5D3F /* Discipline.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7F566181A90C7003F5D3F /* Discipline.m */; };
 		42D7F56A181A90D1003F5D3F /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7F569181A90D1003F5D3F /* Task.m */; };
 		42D7F56D181A90E5003F5D3F /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7F56C181A90E5003F5D3F /* Test.m */; };
+		42E26B731823E2130080EB3C /* TaskDisciplineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E26B721823E2130080EB3C /* TaskDisciplineViewController.m */; };
+		983C206B1822BF2100D6A70C /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C206A1822BF2100D6A70C /* AddTaskViewController.m */; };
+		983C206E1822BF2D00D6A70C /* AddDisciplineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C206D1822BF2D00D6A70C /* AddDisciplineViewController.m */; };
+		983C20711822BF3B00D6A70C /* AddTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C20701822BF3B00D6A70C /* AddTestViewController.m */; };
 		984401E6181A978900452015 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984401E5181A978900452015 /* Storyboard.storyboard */; };
+		EA3D742818238A950027D4E9 /* disc.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D742418238A950027D4E9 /* disc.png */; };
+		EA3D742918238A950027D4E9 /* iphone_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D742518238A950027D4E9 /* iphone_bg.png */; };
+		EA3D742A18238A950027D4E9 /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D742618238A950027D4E9 /* task.png */; };
+		EA3D742B18238A950027D4E9 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D742718238A950027D4E9 /* test.png */; };
+		EAC684CC18230CE600AF3847 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC684CB18230CE500AF3847 /* libsqlite3.dylib */; };
+		EAC684CF182310D000AF3847 /* DatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC684CE182310D000AF3847 /* DatabaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +58,6 @@
 		4207364618202CE600275AF6 /* DisciplineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisciplineListViewController.m; sourceTree = "<group>"; };
 		4247EFFD182033C80099F9F6 /* TestListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestListViewController.h; sourceTree = "<group>"; };
 		4247EFFE182033C80099F9F6 /* TestListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestListViewController.m; sourceTree = "<group>"; };
-		42869A231822728A0046A57D /* disc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disc.png; path = ../../../../Desktop/clazz/clazz/disc.png; sourceTree = "<group>"; };
-		42869A241822728A0046A57D /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = task.png; path = ../../../../Desktop/clazz/clazz/task.png; sourceTree = "<group>"; };
-		42869A251822728A0046A57D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = ../../../../Desktop/clazz/clazz/test.png; sourceTree = "<group>"; };
 		428724F91822717D00B2B404 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
 		428724FA1822717D00B2B404 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		428724FC182271C800B2B404 /* DisciplineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisciplineViewController.h; sourceTree = "<group>"; };
@@ -82,7 +86,22 @@
 		42D7F569181A90D1003F5D3F /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		42D7F56B181A90E5003F5D3F /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		42D7F56C181A90E5003F5D3F /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		42E26B711823E2130080EB3C /* TaskDisciplineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDisciplineViewController.h; sourceTree = "<group>"; };
+		42E26B721823E2130080EB3C /* TaskDisciplineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDisciplineViewController.m; sourceTree = "<group>"; };
+		983C20691822BF2100D6A70C /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		983C206A1822BF2100D6A70C /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		983C206C1822BF2D00D6A70C /* AddDisciplineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDisciplineViewController.h; sourceTree = "<group>"; };
+		983C206D1822BF2D00D6A70C /* AddDisciplineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDisciplineViewController.m; sourceTree = "<group>"; };
+		983C206F1822BF3B00D6A70C /* AddTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTestViewController.h; sourceTree = "<group>"; };
+		983C20701822BF3B00D6A70C /* AddTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTestViewController.m; sourceTree = "<group>"; };
 		984401E5181A978900452015 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EA3D742418238A950027D4E9 /* disc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disc.png; sourceTree = "<group>"; };
+		EA3D742518238A950027D4E9 /* iphone_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_bg.png; sourceTree = "<group>"; };
+		EA3D742618238A950027D4E9 /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task.png; sourceTree = "<group>"; };
+		EA3D742718238A950027D4E9 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		EAC684CB18230CE500AF3847 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EAC684CD182310D000AF3847 /* DatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseViewController.h; sourceTree = "<group>"; };
+		EAC684CE182310D000AF3847 /* DatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC684CC18230CE600AF3847 /* libsqlite3.dylib in Frameworks */,
 				42D7F535181A9044003F5D3F /* CoreGraphics.framework in Frameworks */,
 				42D7F537181A9044003F5D3F /* UIKit.framework in Frameworks */,
 				42D7F533181A9044003F5D3F /* Foundation.framework in Frameworks */,
@@ -112,9 +132,10 @@
 		42869A22182272760046A57D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				42869A231822728A0046A57D /* disc.png */,
-				42869A241822728A0046A57D /* task.png */,
-				42869A251822728A0046A57D /* test.png */,
+				EA3D742418238A950027D4E9 /* disc.png */,
+				EA3D742518238A950027D4E9 /* iphone_bg.png */,
+				EA3D742618238A950027D4E9 /* task.png */,
+				EA3D742718238A950027D4E9 /* test.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -141,6 +162,7 @@
 		42D7F531181A9044003F5D3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAC684CB18230CE500AF3847 /* libsqlite3.dylib */,
 				42D7F532181A9044003F5D3F /* Foundation.framework */,
 				42D7F534181A9044003F5D3F /* CoreGraphics.framework */,
 				42D7F536181A9044003F5D3F /* UIKit.framework */,
@@ -229,6 +251,16 @@
 				428724FA1822717D00B2B404 /* TaskViewController.m */,
 				428724FC182271C800B2B404 /* DisciplineViewController.h */,
 				428724FD182271C800B2B404 /* DisciplineViewController.m */,
+				983C20691822BF2100D6A70C /* AddTaskViewController.h */,
+				983C206A1822BF2100D6A70C /* AddTaskViewController.m */,
+				983C206C1822BF2D00D6A70C /* AddDisciplineViewController.h */,
+				983C206D1822BF2D00D6A70C /* AddDisciplineViewController.m */,
+				983C206F1822BF3B00D6A70C /* AddTestViewController.h */,
+				983C20701822BF3B00D6A70C /* AddTestViewController.m */,
+				42E26B711823E2130080EB3C /* TaskDisciplineViewController.h */,
+				42E26B721823E2130080EB3C /* TaskDisciplineViewController.m */,
+				EAC684CD182310D000AF3847 /* DatabaseViewController.h */,
+				EAC684CE182310D000AF3847 /* DatabaseViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -309,11 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D7F53D181A9044003F5D3F /* InfoPlist.strings in Resources */,
-				42869A271822728A0046A57D /* task.png in Resources */,
 				42D7F545181A9044003F5D3F /* Images.xcassets in Resources */,
-				42869A261822728A0046A57D /* disc.png in Resources */,
 				984401E6181A978900452015 /* Storyboard.storyboard in Resources */,
-				42869A281822728A0046A57D /* test.png in Resources */,
+				EA3D742A18238A950027D4E9 /* task.png in Resources */,
+				EA3D742818238A950027D4E9 /* disc.png in Resources */,
+				EA3D742918238A950027D4E9 /* iphone_bg.png in Resources */,
+				EA3D742B18238A950027D4E9 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,16 +366,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D7F56A181A90D1003F5D3F /* Task.m in Sources */,
+				983C206B1822BF2100D6A70C /* AddTaskViewController.m in Sources */,
 				4207364318201E9500275AF6 /* TaskListViewController.m in Sources */,
 				42D7F543181A9044003F5D3F /* AppDelegate.m in Sources */,
 				4207364718202CE600275AF6 /* DisciplineListViewController.m in Sources */,
 				42D7F53F181A9044003F5D3F /* main.m in Sources */,
 				42D7F56D181A90E5003F5D3F /* Test.m in Sources */,
+				983C206E1822BF2D00D6A70C /* AddDisciplineViewController.m in Sources */,
 				428724FE182271C800B2B404 /* DisciplineViewController.m in Sources */,
 				4247EFFF182033C80099F9F6 /* TestListViewController.m in Sources */,
+				983C20711822BF3B00D6A70C /* AddTestViewController.m in Sources */,
+				EAC684CF182310D000AF3847 /* DatabaseViewController.m in Sources */,
 				428724FB1822717D00B2B404 /* TaskViewController.m in Sources */,
 				42D7F563181A907F003F5D3F /* User.m in Sources */,
 				42D7F567181A90C8003F5D3F /* Discipline.m in Sources */,
+				42E26B731823E2130080EB3C /* TaskDisciplineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,8 @@
 
                                                     // listar as nossas disciplinas e escolher uma
 @property (strong, nonatomic) NSString *name;       // form
-@property (nonatomic) NSInteger *score;
-@property (nonatomic) NSInteger *ponder;            // form
+@property (strong, nonatomic) NSString *discipline;       // form
+@property (nonatomic) NSInteger score;
+@property (nonatomic) NSInteger ponder;            // form
 
 @end

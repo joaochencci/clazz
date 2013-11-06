@@ -1,15 +1,15 @@
 //
-//  TaskListViewController.h
+//  AddTaskViewController.h
 //  clazz
 //
-//  Created by João Victor Chencci on 29/10/13.
+//  Created by Lucas Ramalho on 31/10/13.
 //  Copyright (c) 2013 João / Lucas. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
 
-@interface TaskListViewController : UITableViewController
+@interface AddTaskViewController : UIViewController
 
 @property (strong, nonatomic) NSString *databasePath;
 @property (nonatomic) sqlite3 *clazzDB;

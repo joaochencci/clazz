@@ -14,10 +14,11 @@
 @property (strong, nonatomic) NSString *description;    //form
 @property (strong, nonatomic) NSString *discipline;     //form
 @property (strong, nonatomic) NSString *test;           //form
-@property (strong, nonatomic) NSNumber *conclude;
-@property (strong, nonatomic) NSDate *createDate;
-@property (strong, nonatomic) NSDate *initialDate;      //form
-@property (strong, nonatomic) NSDate *finishDate;       //form
-@property (nonatomic) BOOL important;                   //form
+
+@property (strong, nonatomic) NSString *initialDate;      //form
+@property (strong, nonatomic) NSString *finishDate;       //form
+
+@property (nonatomic) NSInteger important;                   //form
+@property (nonatomic) NSInteger conclude;
 
 @end

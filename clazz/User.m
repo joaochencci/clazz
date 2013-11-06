@@ -38,6 +38,56 @@
         tasks = [[NSMutableArray alloc] init];
         disciplines = [[NSMutableArray alloc] init];
         tests = [[NSMutableArray alloc] init];
+        
+        Task *tarefa1 = [[Task alloc] init];
+        tarefa1.name = @"Tarefa 1";
+        tarefa1.discipline = @"MC102";
+        tarefa1.test = @"P1";
+        tarefa1.description = @"Tarefa Descrita Aqui";
+        
+        Task *tarefa2 = [[Task alloc] init];
+        [tarefa2 setName:@"Tarefa 2"];
+        tarefa2.discipline = @"MC202";
+        tarefa2.test = @"T1";
+        tarefa2.description = @"Tarefa Descrita Aqui";
+        
+        Task *tarefa3 = [[Task alloc] init];
+        [tarefa3 setName:@"Tarefa 3"];
+        tarefa3.discipline = @"MC302";
+        tarefa3.test = @"P2";
+        tarefa3.description = @"Tarefa Descrita Aqui";
+        
+        [tasks addObject:tarefa1];
+        [tasks addObject:tarefa2];
+        [tasks addObject:tarefa3];
+        
+        Discipline *disc1 = [[Discipline alloc] init];
+        disc1.name = @"MC102";
+        disc1.description = @"Introdução à Programação";
+        
+        Discipline *disc2 = [[Discipline alloc] init];
+        disc2.name = @"MC202";
+        disc2.description = @"Estrutura de Dados";
+        
+        [disciplines addObject:disc1];
+        [disciplines addObject:disc2];
+        
+        Test *test1 = [[Test alloc] init];
+        test1.name = @"P1";
+        
+        Test *test2 = [[Test alloc] init];
+        test2.name = @"P2";
+        
+        Test *test3 = [[Test alloc] init];
+        test3.name = @"P3";
+        
+        Test *test4 = [[Test alloc] init];
+        test4.name = @"P4";
+        
+        [tests addObject:test1];
+        [tests addObject:test2];
+        [tests addObject:test3];
+        [tests addObject:test4];
     }
     
     return self;

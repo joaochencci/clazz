@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
 
 @interface DisciplineViewController : UIViewController
+
+@property (strong, nonatomic) NSArray *disciplineDetailModel;
+@property (strong, nonatomic) NSString *databasePath;
+@property (nonatomic) sqlite3 *clazzDB;
 
 @end
